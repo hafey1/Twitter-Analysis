@@ -1,0 +1,12 @@
+version: "3.9"
+services:  
+  frontend:
+    container_name: Twitter-analysis-FE
+    build: ./TwitterAnalysis-FE
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - /app/node_modules
+      - ./TwitterAnalysis-FE:/app
+    ports:
+      - "3001:3000"

@@ -1,0 +1,62 @@
+body, html {
+  min-width: 400px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'arial', 'sans-serif';
+}
+
+body {
+  font-size: 14px;
+  background: #fff;
+}
+
+.Toplevel {
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100%;
+  width: auto;
+  background-color: #E1E8ED;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  max-height: 290px;
+  height: calc(100% - 960px);
+}
+
+.Header_nav {
+  height: 80px;
+  color: #fff;
+  background-color: #1DA1F2;
+  display: flex;
+  align-items: center;
+}
+
+.Footer_nav {
+  background: #657786;
+  flex-shrink: 0;
+  height: 50px;
+}
+
+.Midpoint {
+  padding: 150px;
+  margin: 0 auto;
+  max-height: 160px;
+}
+
+.Botpoint {
+  flex-grow: 1;
+}
+
+.Retrieve_button {
+  height: 100px;
+  width: 200px;
+  
+}
+
