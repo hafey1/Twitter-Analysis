@@ -7,5 +7,5 @@ COPY [ "package.json", "package-lock.json*", "./" ]
 
 RUN npm install
 COPY . .
-
+ENTRYPOINT [ "sh", "./miig.sh" ]
 CMD ["npm", "run", "startdev"]

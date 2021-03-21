@@ -2,6 +2,7 @@ version: "3.9"
 services:  
   frontend:
     container_name: Twitter-analysis-FE
+    build: ./TwitterAnalysis-FE
     image: hafey1/twitterfrontend:latest
     environment:
       CHOKIDAR_USEPOLLING: "true"
@@ -13,6 +14,7 @@ services:
 
   backend:
     container_name: Twitter-analysis-BE
+    build: ./nodeBackEnd
     image: hafey1/twitterbackend:latest
     depends_on:
       postgres:

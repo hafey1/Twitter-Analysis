@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 import debug from 'debug';
-import https from 'https';
+import http from 'http';
 import app from '../app';
 /**
  * Normalize a port into a number, string, or false.
@@ -30,7 +30,7 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-const server = https.createServer(app);
+const server = http.createServer(app);
 
 /**
  * Event listener for HTTP server "error" event.
