@@ -7,4 +7,11 @@ CREATE TABLE IF NOT EXISTS messages (
     message VARCHAR NOT NULL
 )`;
 
+const migration__21_3_21__30_22_16 = `
+INSERT INTO messages(name, message)
+SELECT ('joe', 'my name is joe'), ('notjoe', 'my name is notjoe')
+WHERE NOT EXISTS (SELECT * FROM messages);
+`
+
 executeQueryArray([migration__23_2_21__54_27_10]);
+executeQueryArray([migration__21_3_21__30_22_16]);
