@@ -33,6 +33,8 @@ services:
   postgres:
     image: postgres:10.4
     restart: always
+    stdin_open: true
+    tty: true
     ports:
       - "5432:5432"
     environment:
